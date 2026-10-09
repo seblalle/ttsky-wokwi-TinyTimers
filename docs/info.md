@@ -7,9 +7,9 @@ You can also include images in this folder and reference them in the markdown. E
 512 kb in size, and the combined size of all images must be less than 1 MB.
 -->
 
-# How it works
+# How it works:
 
-## TIMER WITH 7-SEGMENT DISPLAY
+## TIMER WITH 7-SEGMENT DISPLAY:
 
 The circuit is a flip-flop-based timer that shows the passage of time on a 7-segment display. 
 It runs from an oscillator with F_osc = 1 [Hz] and has 3 operating modes, selected with the switches according to which inputs are enabled: 
@@ -17,9 +17,9 @@ It runs from an oscillator with F_osc = 1 [Hz] and has 3 operating modes, select
 2. switch 2 the 32-second mode
 3. switch 3 the counting mode
 
-# How to test
+# How to test:
 
-## MODES 1 AND 2: 16-SECOND AND 32-SECOND TIMERS
+## MODES 1 AND 2: 16-SECOND AND 32-SECOND TIMERS:
 
 The circuit contains two independent blocks, one of 96 seconds (1:36 [min]) and one of 192 seconds (3:12 [min]). 
 Each block has two parts. The lower row of flip-flops acts as a seconds counter (trigger): 
@@ -45,7 +45,7 @@ To use it, first apply the reset and the 1 [Hz] clock. Then flip the switch (1 o
 After 16 or 32 seconds the right-hand segment lights up, and so on clockwise until the circle is complete (steps 1 to 6).
 
 
-## MODE 3: CYCLE NUMBER ON THE DISPLAY
+## MODE 3: CYCLE NUMBER ON THE DISPLAY:
 
 It is activated with the last switch and uses a separate circuit made of three parts. 
 1. A clock divider (the 4 lower flip-flops) lowers the frequency so that the change is visible.
