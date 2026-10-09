@@ -61,7 +61,9 @@ slow clock -> 4-bit counter -> decoder (ANDs + ORs) -> 7 segments
 
 It works with the integrated 7 segmented led, so it doesnt need any external hardware
 
-## CABLE TYPES (COLORS)
+# Documentation:
+
+## CABLE TYPES (COLORS):
 The cables in the diagram use colors to distinguish the function of each signal:
 
 1. Blue: clock signal, including the clock passed from one flip-flop to the next within the divider.
@@ -78,7 +80,8 @@ Mode 3 adds three colors:
 3. Brown: final outputs to OUT0 through OUT6.
 
 
-# Disadvantages of the three entry modes
+# Disadvantages of the three entry modes:
+
 ### MODES 1 AND 2: 96- AND 192-SECOND TIMERS
 1. There are only two fixed durations. Modifying them requires adding or removing flip-flops, as they cannot be adjusted via the switches.
 2. Resolution is low: the progression is displayed in 6 steps (every 16 or 32 seconds), and there is no indication of the remaining time within each step.
@@ -94,6 +97,7 @@ Mode 3 adds three colors:
 2. It is exclusive: it only operates when switch 3 is set to 1 and switches 1 and 2 are set to 0. In any other configuration, the counter remains in a reset state. 3. The count stops upon reaching 10, and the display flashes. To resume counting, a RESET must be performed. 4. With the counter at 0000, all segments remain off, so the digit 0 is not displayed.
 5. It is the largest block in the design (the decoder uses many AND and OR gates), which increases the occupied area.
 
+#Questions:
 ## WHY FLIP-FLOPS?
 1. A flip-flop stores 1 bit and changes state only on the clock edge, acting as the memory that tracks elapsed time; logic gates alone cannot perform this function.
 2. By connecting NOT-Q to the D input, each flip-flop divides the frequency by 2. Using *n* flip-flops results in division by 2^n (e.g., 2^4 → 16 and 2^5 → 32), making this the most efficient method for measuring long time intervals with a slow clock signal.
