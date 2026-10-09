@@ -19,11 +19,11 @@ pinout:
   ui[0]: "16 seconds timer"
   ui[1]: "32 seconds timer"
   ui[2]: "4-bit counter"
-  ui[3]: ""
-  ui[4]: ""
-  ui[5]: ""
-  ui[6]: ""
-  ui[7]: ""
+  ui[3]: "n/a"
+  ui[4]: "n/a"
+  ui[5]: "n/a"
+  ui[6]: "n/a"
+  ui[7]: "n/a"
 
   # Outputs
   uo[0]: "led segment a"
