@@ -1,12 +1,12 @@
 # Tiny Tapeout project information (Wokwi project)
 project:
-  wokwi_id:     477369993960398849      # Set this to the ID of your Wokwi project (the number from the project's URL)
-  title:        ""      # Project title
-  author:       ""      # Your name
+  wokwi_id:     477369993960398849  # Set this to the ID of your Wokwi project (the number from the project's URL)
+  title:        "Tiny Timers"      # Project title
+  author:       "Antonio Gonzalez, Sebastian Lallemand, Francisca Tapia"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  ""      # One line description of what your project does
+  description:  "set of 3 timers to test the integrated 7 segmented led"      # One line description of what your project does
   language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
-  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+  clock_hz:     1       # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
@@ -16,9 +16,9 @@ project:
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
-  ui[0]: ""
-  ui[1]: ""
-  ui[2]: ""
+  ui[0]: "16 seconds timer"
+  ui[1]: "32 seconds timer"
+  ui[2]: "4-bit counter"
   ui[3]: ""
   ui[4]: ""
   ui[5]: ""
@@ -26,14 +26,14 @@ pinout:
   ui[7]: ""
 
   # Outputs
-  uo[0]: ""
-  uo[1]: ""
-  uo[2]: ""
-  uo[3]: ""
-  uo[4]: ""
-  uo[5]: ""
-  uo[6]: ""
-  uo[7]: ""
+  uo[0]: "led segment a"
+  uo[1]: "led segment b"
+  uo[2]: "led segment c"
+  uo[3]: "led segment d"
+  uo[4]: "led segment e"
+  uo[5]: "led segment f"
+  uo[6]: "led segment g"
+  uo[7]: "led segment h"
 
   # Bidirectional pins
   uio[0]: ""
