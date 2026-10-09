@@ -59,4 +59,4 @@ slow clock -> 4-bit counter -> decoder (ANDs + ORs) -> 7 segments
 
 # External hardware
 
-It works with the board 7 segment led, so it doesnt need anny external hardware
+It works with the integrated 7 segmented led, so it doesnt need any external hardware
